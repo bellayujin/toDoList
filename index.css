@@ -1,5 +1,5 @@
 body{
-    background: url('/image/backwall.jpg') no-repeat;
+    background: url('image/backwall.jpg') no-repeat;
     background-size: 100%;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body{
     user-select: none;
 }
 body.on{
-    background: url('/image/backwall_on.jpg') no-repeat;
+    background: url('image/backwall_on.jpg') no-repeat;
     background-size: 100%;
 }
 .sidebar{
