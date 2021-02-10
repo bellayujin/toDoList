@@ -233,7 +233,7 @@ body.on{
 .todo_sec{
     position:relative;
     width:100%;
-    min-height: 330px;
+    min-height: 300px;
     margin: 0 auto 20px;
     padding:10px 15px;
     background-color: rgba(14, 14, 14, 0.7);   
