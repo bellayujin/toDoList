@@ -20,7 +20,7 @@ body.on{
     height: 100%;
     overflow-y: scroll;
     background-color: rgba(109, 109, 109, 0.3);
-    padding: 5px 15px;
+    padding: 0px 15px;
     box-sizing: border-box;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
