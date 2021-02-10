@@ -1,0 +1,333 @@
+body{
+    background: url('/image/backwall.jpg') no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    overflow: hidden;
+    user-select: none;
+}
+body.on{
+    background: url('/image/backwall_on.jpg') no-repeat;
+    background-size: 100%;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgba(109, 109, 109, 0.3);
+    padding: 15px;
+    box-sizing: border-box;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.sidebar .inner{
+    width: 100%;
+}
+
+.sidebar .water{
+    width:100%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: rgba(14, 14, 14, 0.7);
+    box-sizing: border-box;
+    border-radius: 15px;
+    float: left;
+}
+
+.sidebar .water >p{
+    width: 60px;
+    float: left;
+}
+
+.sidebar .water .water-progress{
+    width: 200px;
+    height: 15px;
+    margin-top:20px;
+    border:2px solid #353535;
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+    float: right;
+}
+
+.sidebar .water .water-progress .activeBar{
+    position: relative;
+    width:0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #0091ae;
+    transition: 0.4s ease;
+}
+
+.sidebar .water .water-progress .feeling{
+    position: absolute;
+    top:-7px;
+    right:-12.5px;
+    width:30px;
+}
+
+.sidebar .water .water-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .water .water-img:hover{
+    cursor: pointer;
+}
+
+.time-sec{
+    position: absolute;
+    top:7%;
+    right:8%;
+}
+
+.time-sec .js_clock .js_time{
+    font-size: 80px;
+}
+
+.js_weather{
+    position:absolute;
+    top:75%;
+    right:0%;
+    text-align: right;
+}
+
+#hover{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width:20%;
+    height:40%;
+}
+
+.greeting_cover{
+    position: relative;
+    width: 155px;
+    height: 155px;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    float: left;
+}
+
+.greeting_cover input{
+    position: absolute;
+    top:20px;
+    left: 15px;
+    background: transparent;
+    border:none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    border-bottom: 1px solid #555555;
+    outline: none;
+    padding: 10px;
+    color: #555555;
+}
+
+.greeting_cover input::-webkit-input-placeholder{
+    color:rgba(3, 3, 3, 0.822);
+}
+
+.form,
+.greetings{
+    display:none;
+}
+
+.showing{
+    display: block;
+}
+
+.greetings{
+    font-size:25px;
+    color: #555555;
+    margin-top:10px;
+}
+
+/* 랜덤 이미지 */
+.random_pic{
+    position: relative;
+    width: 155px;
+    height: 155px;
+    margin-left: 20px;
+    background-color: rgba(14, 14, 14, 0.7);
+    border-radius: 15px;
+    float: right;
+    overflow: hidden;
+}
+
+.random_pic h3{
+    position: absolute;
+    bottom:5px;
+    right:15px;
+    text-align: right;
+    line-height: 25px;
+    padding-left:5px;
+}
+
+.random_pic img{
+    height: 100%;
+}
+
+/* 캘린더 */
+.calender_sec{
+    width:100%;
+    margin: 20px auto;
+}
+.calender{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(14, 14, 14, 0.7);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.calender tr td{
+    font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.calender tr td.today{
+    background-color:#ccc;
+    color: #353535;
+    border-radius: 100%;
+}
+
+.calender tr:nth-child(2) td{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.calender tr td.on{
+    width:25px;
+    background-color: #333;
+    border-radius: 100%;
+}
+
+.calender #headcal_0{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    line-height: 30px;
+}
+.calender button{
+    background-color:transparent;
+    border: none;
+    border-radius: 0px;
+    padding: 2px;
+    color: #fff;
+}
+
+/* TO-Do */
+.todo_sec{
+    position:relative;
+    width:100%;
+    min-height: 330px;
+    margin: 0 auto 20px;
+    padding:10px 15px;
+    background-color: rgba(14, 14, 14, 0.7);   
+    border-radius: 15px;
+    color: #fff;
+    box-sizing: border-box;
+    
+}
+
+.todo_sec h3{
+    line-height:30px;
+    font-size:23px;
+    text-align: center;
+}
+
+.todo_sec .state{
+    text-align: right;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.todo_sec .state span{
+    font-size:23px;
+    line-height: 23px;
+}
+
+.todo_sec .state .yellow{
+    color: yellow;
+}
+
+.todo_sec .js_todoForm{
+    border-bottom:2px solid #fff;
+    width:98%;
+    margin: 10px auto;
+    line-height:30px;
+}
+
+.todo_sec .js_todoForm input{
+    width:100%;
+    height: 40px;
+    font-size: 18px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    text-align: left;
+    padding: 5px 10px;
+    color:#fff;
+    font-family:'Times New Roman', Times, serif
+}
+
+.todo_sec .js_todoList{
+    width:100%;
+    min-height: 200px;
+    padding-left: 0;
+}
+
+.todo_sec .js_todoList li{
+    width:100%;
+    text-align: left;
+    list-style: none;
+}
+
+.todo_sec .js_todoList li span{
+    font-size: 16px;;
+    line-height: 28px;
+}
+
+.todo_sec .js_todoList li span:first-child{
+    font-size:25px;
+    margin-right:10px;
+}
+
+.todo_sec .js_todoList li span:first-child:hover{
+    cursor: pointer;
+}
+
+.todo_sec .js_todoList li.on span:first-child{
+    color:yellow
+}
+
+.todo_sec .js_todoList li.on span:nth-child(2){
+    text-decoration-line: line-through;
+}
+
+.todo_sec .js_todoList li button{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background:none;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    cursor: pointer;
+}
