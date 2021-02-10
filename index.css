@@ -286,7 +286,7 @@ body.on{
 
 .todo_sec .js_todoList{
     width:100%;
-    min-height: 200px;
+    min-height: 100px;
     padding-left: 0;
 }
 
