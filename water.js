@@ -9,10 +9,10 @@ function waterActive(event){
 
     if(check === 0){
         drop.classList.add('fin');
-        drop.src= '/image/water_on.png';
+        drop.src= 'image/water_on.png';
     }else{
         drop.classList.remove('fin');
-        drop.src= '/image/water_off.png';
+        drop.src= 'image/water_off.png';
     };
 
     let fill = document.querySelector('.activeBar');
@@ -28,22 +28,22 @@ function waterActive(event){
 
     if (fillValue < '20%' && fillValue !== '100%'){
 
-        feeling.src="/image/drink_0.png";
+        feeling.src="image/drink_0.png";
 
     } else if (fillValue < '40%' && fillValue !== '100%'){
 
-        feeling.src="/image/drink_1.png";
+        feeling.src="image/drink_1.png";
 
     } else if (fillValue < '70%' && fillValue !== '100%'){
 
-        feeling.src="/image/drink_2.png";
+        feeling.src="image/drink_2.png";
 
     } else if (fillValue < '90%' && fillValue !== '100%'){
 
-        feeling.src="/image/drink_3.png";
+        feeling.src="image/drink_3.png";
 
     } else {
-        feeling.src="/image/drink_4.png";
+        feeling.src="image/drink_4.png";
     }
     
 };
@@ -55,7 +55,7 @@ function waterGauge(){
     activeBar.classList.add('activeBar');
     waterProgress.appendChild(activeBar);
 
-    activeFace.src='/image/drink_0.png';
+    activeFace.src='image/drink_0.png';
     activeFace.classList.add('feeling');
     activeBar.appendChild(activeFace);
 
@@ -63,7 +63,7 @@ function waterGauge(){
         let img = document.createElement('div');
         img.setAttribute("id", "drop_" + i)
 
-        img.innerHTML = "<img src='/image/water_off.png' width='30px'/>"
+        img.innerHTML = "<img src='image/water_off.png' width='30px'/>"
         waterList.appendChild(img);
     }
 
