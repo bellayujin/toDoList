@@ -37,7 +37,7 @@ body.on{
 .sidebar .water{
     width:100%;
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 15px 0;
     background-color: rgba(14, 14, 14, 0.7);
     box-sizing: border-box;
     border-radius: 15px;
@@ -181,7 +181,7 @@ body.on{
 /* 캘린더 */
 .calender_sec{
     width:100%;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 .calender{
     width: 100%;
@@ -234,7 +234,7 @@ body.on{
     position:relative;
     width:100%;
     min-height: 300px;
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     padding:10px 15px;
     background-color: rgba(14, 14, 14, 0.7);   
     border-radius: 15px;
